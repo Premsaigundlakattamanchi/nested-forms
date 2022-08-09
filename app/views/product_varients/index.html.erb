@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Product varients</h1>
+
+<div id="product_varients">
+  <% @product_varients.each do |product_varient| %>
+    <%= render product_varient %>
+    <p>
+      <%= link_to "Show this product varient", product_varient %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New product varient", new_product_varient_path %>
